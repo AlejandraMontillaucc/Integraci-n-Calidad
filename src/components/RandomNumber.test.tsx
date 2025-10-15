@@ -7,7 +7,7 @@ describe("Componente de número aleatorio", () => {
     render(<RandomNumber />);
 
     const mensajeInicial = screen.getByText(/clic para generar/i);
-    expect(mensajeInicial).toBeInTheDocument();
+    expect(mensajeInicia).toBeInTheDocument();
 
     const botonGenerar = screen.getByRole("button", { name: /Generar Número/i });
 
